@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/13/19||03:11:20" using="Simscape Multibody Link Version 5.2" from="SolidWorks 26.3.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="166">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="MirrorMecanum-1" uid="MirrorMecanum-1" entityUid="MirrorMecanum*:*Default">
+<Transform>
+<Rotation>0.019793725361050469 0.99961983605040772 0.019193535653634498 -0.9576724620877205 0.013441989248734363 0.28754611505614297 0.28717880108945193 -0.024072729375642903 0.95757445658561313</Rotation>
+<Translation>-0.04047318961387919 0.21356921548536631 0.14568623376408957</Translation>
+</Transform>
+</Instance>
+<Instance name="Part1-1" uid="Part1-1" grounded="true" entityUid="Part1*:*Default">
+<Transform>
+<Rotation>0.99961983605040772 -0.01225661416924557 0.02469734365599411 0.013441989248734102 0.99873680242510365 -0.048416034603388537 -0.0240727293756429 0.048729610000346278 0.99852187197357933</Rotation>
+<Translation>-0.061960885160783671 0.12179090390632868 0.12173798227442491</Translation>
+</Transform>
+</Instance>
+<Instance name="Mecanum2-1" uid="Mecanum2-1" entityUid="Mecanum2*:*Default">
+<Transform>
+<Rotation>-0.0019288207106050513 0.99961983605040772 0.027503872913144226 -0.83687170759151885 0.013441989248735646 -0.54723400658026744 -0.54739567470297168 -0.024072729375642532 0.83652763195060409</Rotation>
+<Translation>0.76117531927326643 0.86351424496850837 0.15737268015047753</Translation>
+</Transform>
+</Instance>
+<Instance name="Mecanum-1" uid="Mecanum-1" entityUid="Mecanum*:*Default">
+<Transform>
+<Rotation>0.026207944436834284 0.99961983605040772 0.0085631199309508677 -0.73441575804562476 0.013441989248735971 0.67856673014472746 0.67819365817048616 -0.02407272937564222 0.73448884655775482</Rotation>
+<Translation>0.7690179344685133 0.22445452467436128 0.12619216205877595</Translation>
+</Transform>
+</Instance>
+<Instance name="MirrorMecanum1-1" uid="MirrorMecanum1-1" entityUid="MirrorMecanum1*:*Default">
+<Transform>
+<Rotation>-0.020912541871959071 0.99961983605040783 0.017967998414114457 -0.19934593644074178 0.013441989248734694 -0.97983698161969834 -0.97970600856431278 -0.02407272937564332 0.19898904613920279</Rotation>
+<Translation>-0.048315804809139322 0.85262893577940846 0.17686675185517201</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>MirrorMecanum1-1</Uid>
+</InstancePath>
+<Position>0 0.047920309538740019 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.045065999999999815 0.73243400000000036 0.01999999999999999</Position>
+<Axis>1 2.4199392489876459e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MirrorMecanum-1</Uid>
+</InstancePath>
+<Position>0 0.04592030953874001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.045065999999999981 0.092565999999999732 0.01999999999999999</Position>
+<Axis>1 2.4199392489876459e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Mecanum-1</Uid>
+</InstancePath>
+<Position>0 0.047920309538740047 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.85485599999999995 0.092566000000000009 0.01999999999999999</Position>
+<Axis>-1 -1.2902005852577503e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Mecanum2-1</Uid>
+</InstancePath>
+<Position>0 0.047920309538739936 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.85485599999999995 0.73243400000000058 0.01999999999999999</Position>
+<Axis>-1 -1.2902005852577503e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Mecanum2-1</Uid>
+</InstancePath>
+<Position>0 0.047920309538739936 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.87985599999999986 0.73243400000000058 0.01999999999999999</Position>
+<Axis>-1 -1.2902005852577503e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>MirrorMecanum1-1</Uid>
+</InstancePath>
+<Position>0 -0.0020707100000800019 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.02006599999999982 0.73243400000000036 0.019999999999999962</Position>
+<Axis>1 2.4199392489876459e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>MirrorMecanum-1</Uid>
+</InstancePath>
+<Position>0 -0.002070710000079995 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.020065999999999959 0.092565999999999732 0.020000000000000018</Position>
+<Axis>1 2.4199392489876459e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Mecanum-1</Uid>
+</InstancePath>
+<Position>0 0.047920309538740047 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0.87985599999999997 0.092565999999999982 0.01999999999999999</Position>
+<Axis>-1 -1.2902005852577503e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Mecanum" uid="Mecanum*:*Default" version="1321">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Mecanum.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.52818075404274545</Mass>
+<CenterOfMass>1.4928856036897208e-07 0.037093579478785541 0</CenterOfMass>
+<Inertia>0.00040375654832568907 0.0006926129582079339 0.00040372535691808592 -1.993712140891623e-08 0 1.1172273283885332e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Mecanum_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Mecanum2" uid="Mecanum2*:*Default" version="1321">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Mecanum2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.52818075404274545</Mass>
+<CenterOfMass>1.4928856036897208e-07 0.037093579478785541 0</CenterOfMass>
+<Inertia>0.00040375654832568907 0.0006926129582079339 0.00040372535691808592 -1.993712140891623e-08 0 1.1172273283885332e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Mecanum2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MirrorMecanum" uid="MirrorMecanum*:*Default" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="MirrorMecanum.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.12343801093097309</Mass>
+<CenterOfMass>6.3424550467525011e-07 0.022923616738560484 -2.4050132507901023e-10</CenterOfMass>
+<Inertia>0.00012102127510249297 0.00019928138996165126 0.00012099008913737072 1.9919192303936878e-08 -8.475402300189248e-13 2.4863107071768486e-11</Inertia>
+</MassProperties>
+<GeometryFile name="MirrorMecanum_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MirrorMecanum1" uid="MirrorMecanum1*:*Default" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="MirrorMecanum1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.1234380109309731</Mass>
+<CenterOfMass>6.3424550467671241e-07 0.022923616738560477 -2.4050132544269673e-10</CenterOfMass>
+<Inertia>0.000121021275102493 0.00019928138996165131 0.00012099008913737072 1.9919192303938036e-08 -8.4754022614771953e-13 2.486310707338976e-11</Inertia>
+</MassProperties>
+<GeometryFile name="MirrorMecanum1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part1" uid="Part1*:*Default" version="242">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Part1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>8.4906291243150651</Mass>
+<CenterOfMass>0.44996100000000033 0.45032184170418488 0.019999999999999987</CenterOfMass>
+<Inertia>0.99414365500482982 1.1083595110709099 2.1002639207397062 0 0 1.761345623618834e-15</Inertia>
+</MassProperties>
+<GeometryFile name="Part1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

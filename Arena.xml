@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/13/19||22:32:38" using="Simscape Multibody Link Version 5.2" from="SolidWorks 26.3.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="103">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Arena-1" uid="Arena-1" grounded="true" entityUid="Arena*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-3.3737822783375124 -0.25456829711546725 5.019769125104065</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Arena" uid="Arena*:*Default" version="634">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arena.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2157.760572152758</Mass>
+<CenterOfMass>4.627037492360019 0.12291415473960161 -7.4330843768605304</CenterOfMass>
+<Inertia>18015.609642717871 25245.283357763507 7301.270233147734 404.36141416289581 5371.1980231121006 -269.95719443031851</Inertia>
+</MassProperties>
+<GeometryFile name="Arena_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.50196078431372548" g="0" b="0" a="1"/>
+<Diffuse r="0.50196078431372548" g="0" b="0" a="1"/>
+<Specular r="0.25098039215686274" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
